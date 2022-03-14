@@ -1,0 +1,12 @@
+syntax = "proto3";
+package brohamgoham.blackhole.blackhole;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/brohamgoham/blackhole/x/blackhole/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
