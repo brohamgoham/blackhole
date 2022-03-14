@@ -2,6 +2,7 @@
   <div class="container">
     <div class="row row-sm-revers">
       <div class="col-md-6">
+        <SpTheme />
         <SpAssets />
         <SpTxList />
       </div>
@@ -13,14 +14,14 @@
 </template>
 
 <script>
-import { SpAssets, SpTx, SpTxList } from '@starport/vue'
+import { SpAssets, SpTx, SpTxList, SpTypography, SpTheme } from '@starport/vue';
 import { computed } from 'vue'
 import { useStore } from 'vuex'
 
 export default {
   name: 'Portfolio',
 
-  components: { SpTx, SpAssets, SpTxList },
+  components: { SpTx, SpAssets, SpTxList, SpTypography },
 
   setup() {
     // store

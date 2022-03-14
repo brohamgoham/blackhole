@@ -6,7 +6,10 @@ const store = createStore({
     return {}
   },
   mutations: {},
-  actions: {},
+  actions: {}
 })
+
+// init @starport/vuex
 init(store)
+
 export default store
